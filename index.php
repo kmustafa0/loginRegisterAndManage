@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
    //$name = mysqli_real_escape_string($conn, $_POST['name']);
    $email = mysqli_real_escape_string($conn, $_POST['email']);
    //$pass = md5($_POST['password']);
-   $pass = $_POST['password'];
+   $pass = mysqli_real_escape_string($conn, $_POST['password']);
 
    //$user_type = $_POST['user_type'];
 
